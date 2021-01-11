@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/mealsBot"
+        android:title="Meals"
+        android:icon="@drawable/ic_local_dining_black_24dp"
+        />
+    <item android:id="@+id/favBot"
+        android:icon="@drawable/ic_favorite_black_24dp"
+        android:title="Favourites"
+        />
+    <item android:id="@+id/newBot"
+        android:title="New"
+        android:icon="@drawable/ic_local_cafe_black_24dp"
+        />
+
+</menu>

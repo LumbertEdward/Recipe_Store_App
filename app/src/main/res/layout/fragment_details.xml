@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/back"
+    tools:context=".FragmentClasses.DetailsFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <ProgressBar
+            android:id="@+id/progressDet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            />
+        <ScrollView
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp">
+                    <ImageView
+                        android:id="@+id/imageDetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="400dp"
+                        android:scaleType="fitXY"
+                        />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        >
+                        <ImageView
+                            android:id="@+id/backDetail"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@drawable/ic_arrow_back_black_24dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            />
+                        <com.like.LikeButton
+                            android:id="@+id/likeB"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="20dp"
+                            app:like_drawable="@drawable/like_b"
+                            app:unlike_drawable="@drawable/unlike_b"
+                            android:layout_alignParentRight="true" />
+
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/imgPlay"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:src="@drawable/ic_play_circle_filled_black_24dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="-60dp"
+                    >
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="380dp"
+                        android:layout_height="120dp"
+                        android:layout_gravity="center_horizontal"
+                        app:cardCornerRadius="20dp"
+                        app:cardBackgroundColor="@color/back"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="5dp"
+                            >
+                            <TextView
+                                android:id="@+id/titleDetail"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Vanilla Cake Vanilla Cake"
+                                android:fontFamily="@font/nunitobold"
+                                android:textColor="@android:color/holo_purple"
+                                android:textSize="22sp"
+                                android:layout_marginTop="10dp"
+                                android:maxLines="2"
+                                android:ellipsize="end"
+                                />
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="2dp"
+                                >
+                                <ImageView
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"
+                                    android:src="@drawable/ic_star_black_24dp"
+                                    />
+                                <ImageView
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"
+                                    android:src="@drawable/ic_star_black_24dp"
+                                    />
+                                <ImageView
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"
+                                    android:src="@drawable/ic_star_black_24dp"
+                                    />
+                                <ImageView
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"
+                                    android:src="@drawable/ic_star_black_24dp"
+                                    />
+                                <ImageView
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"
+                                    android:src="@drawable/ic_star_black_24dp"
+                                    />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="8dp"
+                                >
+                                <TextView
+                                    android:id="@+id/areaDetail"
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="Chicken"
+                                    android:background="@drawable/list_item"
+                                    android:textColor="@android:color/white"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:maxLines="1"
+                                    android:paddingTop="2dp"
+                                    android:paddingBottom="2dp"
+                                    android:ellipsize="end"
+                                    android:textAlignment="center"
+                                    android:fontFamily="@font/nunitosemibold"
+                                    android:textSize="10sp"
+                                    android:layout_marginRight="3dp"
+                                    android:gravity="center_horizontal" />
+                                <TextView
+                                    android:id="@+id/categoryDetail"
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="Japanese"
+                                    android:textAlignment="center"
+                                    android:background="@drawable/list_item"
+                                    android:textColor="@android:color/white"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:paddingTop="2dp"
+                                    android:maxLines="1"
+                                    android:ellipsize="end"
+                                    android:paddingBottom="2dp"
+                                    android:fontFamily="@font/nunitosemibold"
+                                    android:textSize="10sp"
+                                    android:layout_marginRight="3dp"
+                                    android:gravity="center_horizontal" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ingredients"
+                        android:textColor="@android:color/holo_purple"
+                        android:fontFamily="@font/nunitobold"
+                        android:textSize="16sp"
+                        android:layout_marginTop="15dp"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            >
+                            <TextView
+                                android:id="@+id/ingedient1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Coconut Flakes"
+                                android:layout_marginLeft="10dp"
+                                android:textColor="@android:color/darker_gray"
+                                android:fontFamily="@font/nunitosemibold"
+                                android:textSize="14sp"
+                                />
+                            <TextView
+                                android:id="@+id/measure1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1/2 teaspoon"
+                                android:fontFamily="@font/nunitosemibold"
+                                android:textColor="@android:color/darker_gray"
+                                android:layout_alignParentEnd="true"
+                                android:textSize="14sp"
+                                android:layout_alignParentRight="true" />
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            >
+                            <TextView
+                                android:id="@+id/ingedient2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Coconut Flakes"
+                                android:textColor="@android:color/darker_gray"
+                                android:fontFamily="@font/nunitosemibold"
+                                android:textSize="14sp"
+                                android:layout_marginLeft="10dp"
+                                />
+                            <TextView
+                                android:id="@+id/measure2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1/2 teaspoon"
+                                android:fontFamily="@font/nunitosemibold"
+                                android:textColor="@android:color/darker_gray"
+                                android:layout_alignParentEnd="true"
+                                android:textSize="14sp"
+                                android:layout_alignParentRight="true" />
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            >
+
+                            <TextView
+                                android:id="@+id/ingedient3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:fontFamily="@font/nunitosemibold"
+                                android:text="Coconut Flakes"
+                                android:textColor="@android:color/darker_gray"
+                                android:textSize="14sp" />
+                            <TextView
+                                android:id="@+id/measure3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1/2 teaspoon"
+                                android:fontFamily="@font/nunitosemibold"
+                                android:textColor="@android:color/darker_gray"
+                                android:layout_alignParentEnd="true"
+                                android:textSize="14sp"
+                                android:layout_alignParentRight="true" />
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            >
+                            <TextView
+                                android:id="@+id/ingedient4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Coconut Flakes"
+                                android:textColor="@android:color/darker_gray"
+                                android:fontFamily="@font/nunitosemibold"
+                                android:textSize="14sp"
+                                android:layout_marginLeft="10dp"
+                                />
+                            <TextView
+                                android:id="@+id/measure4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1/2 teaspoon"
+                                android:fontFamily="@font/nunitosemibold"
+                                android:textColor="@android:color/darker_gray"
+                                android:layout_alignParentEnd="true"
+                                android:textSize="14sp"
+                                android:layout_alignParentRight="true" />
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            >
+
+                            <TextView
+                                android:id="@+id/ingedient5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:fontFamily="@font/nunitosemibold"
+                                android:text="Coconut Flakes"
+                                android:textColor="@android:color/darker_gray"
+                                android:textSize="14sp" />
+                            <TextView
+                                android:id="@+id/measure5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1/2 teaspoon"
+                                android:fontFamily="@font/nunitosemibold"
+                                android:textColor="@android:color/darker_gray"
+                                android:layout_alignParentEnd="true"
+                                android:textSize="14sp"
+                                android:layout_alignParentRight="true" />
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            >
+                            <TextView
+                                android:id="@+id/ingedient6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Coconut Flakes"
+                                android:textColor="@android:color/darker_gray"
+                                android:fontFamily="@font/nunitosemibold"
+                                android:textSize="14sp"
+                                android:layout_marginLeft="10dp"
+                                />
+                            <TextView
+                                android:id="@+id/measure6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1/2 teaspoon"
+                                android:fontFamily="@font/nunitosemibold"
+                                android:textColor="@android:color/darker_gray"
+                                android:layout_alignParentEnd="true"
+                                android:textSize="14sp"
+                                android:layout_alignParentRight="true" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Procedure"
+                            android:textColor="@android:color/holo_purple"
+                            android:fontFamily="@font/nunitobold"
+                            android:textSize="16sp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="10dp"
+                            />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="5dp"
+                            >
+                            <TextView
+                                android:id="@+id/instructionDetail"
+                                android:layout_width="350dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/nunitosemibold"
+                                android:textColor="@android:color/darker_gray"
+                                android:layout_marginLeft="10dp"
+                                android:textSize="15sp"
+                                android:layout_gravity="center_vertical"
+                                android:text="Start folding one end inside a given sufuria of ugali"
+                                />
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+</FrameLayout>

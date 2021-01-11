@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back"
+    tools:context=".FragmentClasses.HomeFragment">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmerHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <ScrollView
+                    android:id="@+id/scrollSh"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        >
+                        <HorizontalScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                >
+                                <include layout="@layout/shimmer_cat"/>
+                                <include layout="@layout/shimmer_cat"/>
+                                <include layout="@layout/shimmer_cat"/>
+                                <include layout="@layout/shimmer_cat"/>
+
+                            </LinearLayout>
+
+                        </HorizontalScrollView>
+
+                        <TextView
+                            android:id="@+id/headDishSH"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Dishes"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/nunitobold"
+                            android:textColor="@android:color/holo_purple"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="15sp"
+                            />
+                        <HorizontalScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                >
+                                <include layout="@layout/shimmer_area"/>
+                                <include layout="@layout/shimmer_area"/>
+                                <include layout="@layout/shimmer_area"/>
+
+
+                            </LinearLayout>
+
+                        </HorizontalScrollView>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            >
+                            <TextView
+                                android:id="@+id/headChickenSH"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Chicken"
+                                android:fontFamily="@font/nunitobold"
+                                android:textColor="@android:color/holo_purple"
+                                android:layout_marginLeft="10dp"
+                                android:textSize="15sp"
+                                />
+                            <TextView
+                                android:id="@+id/allSH"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="See All"
+                                android:fontFamily="@font/nunitobold"
+                                android:textColor="@android:color/darker_gray"
+                                android:layout_marginLeft="10dp"
+                                android:textSize="15sp"
+                                android:layout_marginRight="10dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true" />
+
+                        </RelativeLayout>
+                        <HorizontalScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                >
+                                <include layout="@layout/shimmer_all"/>
+                                <include layout="@layout/shimmer_all"/>
+                                <include layout="@layout/shimmer_all"/>
+
+                            </LinearLayout>
+
+                        </HorizontalScrollView>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            >
+                            <TextView
+                                android:id="@+id/headBeefSH"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Beef"
+                                android:fontFamily="@font/nunitobold"
+                                android:textColor="@android:color/holo_purple"
+                                android:layout_marginLeft="10dp"
+                                android:textSize="15sp"
+                                />
+                            <TextView
+                                android:id="@+id/allBeefSH"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="See All"
+                                android:fontFamily="@font/nunitobold"
+                                android:textColor="@android:color/darker_gray"
+                                android:layout_marginLeft="10dp"
+                                android:textSize="15sp"
+                                android:layout_marginRight="10dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true" />
+
+                        </RelativeLayout>
+                        <HorizontalScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                >
+                                <include layout="@layout/shimmer_all"/>
+                                <include layout="@layout/shimmer_all"/>
+                                <include layout="@layout/shimmer_all"/>
+
+                            </LinearLayout>
+
+                        </HorizontalScrollView>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            >
+                            <TextView
+                                android:id="@+id/headPorkSH"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Pork"
+                                android:fontFamily="@font/nunitobold"
+                                android:textColor="@android:color/holo_purple"
+                                android:layout_marginLeft="10dp"
+                                android:textSize="15sp"
+                                />
+                            <TextView
+                                android:id="@+id/allPorkSH"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="See All"
+                                android:fontFamily="@font/nunitobold"
+                                android:textColor="@android:color/darker_gray"
+                                android:layout_marginLeft="10dp"
+                                android:textSize="15sp"
+                                android:layout_marginRight="10dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true" />
+
+                        </RelativeLayout>
+                        <HorizontalScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                >
+                                <include layout="@layout/shimmer_all"/>
+                                <include layout="@layout/shimmer_all"/>
+                                <include layout="@layout/shimmer_all"/>
+
+                            </LinearLayout>
+
+                        </HorizontalScrollView>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            >
+                            <TextView
+                                android:id="@+id/headSeaSH"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="SeaFood"
+                                android:fontFamily="@font/nunitobold"
+                                android:textColor="@android:color/holo_purple"
+                                android:layout_marginLeft="10dp"
+                                android:textSize="15sp"
+                                />
+                            <TextView
+                                android:id="@+id/allSeaSH"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="See All"
+                                android:fontFamily="@font/nunitobold"
+                                android:textColor="@android:color/darker_gray"
+                                android:layout_marginLeft="10dp"
+                                android:textSize="15sp"
+                                android:layout_marginRight="10dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true" />
+
+                        </RelativeLayout>
+                        <HorizontalScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                >
+                                <include layout="@layout/shimmer_all"/>
+                                <include layout="@layout/shimmer_all"/>
+                                <include layout="@layout/shimmer_all"/>
+
+                            </LinearLayout>
+
+                        </HorizontalScrollView>
+
+                    </LinearLayout>
+                </ScrollView>
+            </RelativeLayout>
+
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+        <ScrollView
+            android:id="@+id/scrollRec"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/categoriesRecycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="horizontal"
+                    android:scrollbarSize="0dp"
+                    />
+                <TextView
+                    android:id="@+id/headDish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dishes"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/nunitobold"
+                    android:textColor="@android:color/holo_purple"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="15sp"
+                    />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/areaRecycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:scrollbars="horizontal"
+                    android:scrollbarSize="0dp"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    >
+                    <TextView
+                        android:id="@+id/headChicken"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Chicken"
+                        android:fontFamily="@font/nunitobold"
+                        android:textColor="@android:color/holo_purple"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="15sp"
+                        />
+                    <TextView
+                        android:id="@+id/all"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="See All"
+                        android:fontFamily="@font/nunitobold"
+                        android:textColor="@android:color/darker_gray"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="15sp"
+                        android:layout_marginRight="10dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true" />
+
+                </RelativeLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/chickenRecycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:scrollbarSize="0dp"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    >
+                    <TextView
+                        android:id="@+id/headBeef"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Beef"
+                        android:fontFamily="@font/nunitobold"
+                        android:textColor="@android:color/holo_purple"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="15sp"
+                        />
+                    <TextView
+                        android:id="@+id/allBeef"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="See All"
+                        android:fontFamily="@font/nunitobold"
+                        android:textColor="@android:color/darker_gray"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="15sp"
+                        android:layout_marginRight="10dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true" />
+
+                </RelativeLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/beefRecycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:scrollbarSize="0dp"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    >
+                    <TextView
+                        android:id="@+id/headPork"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pork"
+                        android:fontFamily="@font/nunitobold"
+                        android:textColor="@android:color/holo_purple"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="15sp"
+                        />
+                    <TextView
+                        android:id="@+id/allPork"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="See All"
+                        android:fontFamily="@font/nunitobold"
+                        android:textColor="@android:color/darker_gray"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="15sp"
+                        android:layout_marginRight="10dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true" />
+
+                </RelativeLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/PorkRecycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:scrollbarSize="0dp"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    >
+                    <TextView
+                        android:id="@+id/headSea"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SeaFood"
+                        android:fontFamily="@font/nunitobold"
+                        android:textColor="@android:color/holo_purple"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="15sp"
+                        />
+                    <TextView
+                        android:id="@+id/allSea"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="See All"
+                        android:fontFamily="@font/nunitobold"
+                        android:textColor="@android:color/darker_gray"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="15sp"
+                        android:layout_marginRight="10dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true" />
+
+                </RelativeLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/seaRecycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:scrollbarSize="0dp"
+                    />
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</FrameLayout>

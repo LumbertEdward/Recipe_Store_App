@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/back"
+    android:layout_height="match_parent"
+    tools:context=".FragmentClasses.NewRecipesFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmerLatest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <include layout="@layout/new_item_schemmer"/>
+                <include layout="@layout/new_item_schemmer"/>
+                <include layout="@layout/new_item_schemmer"/>
+                <include layout="@layout/new_item_schemmer"/>
+                <include layout="@layout/new_item_schemmer"/>
+                <include layout="@layout/new_item_schemmer"/>
+                <include layout="@layout/new_item_schemmer"/>
+                <include layout="@layout/new_item_schemmer"/>
+                <include layout="@layout/new_item_schemmer"/>
+                <include layout="@layout/new_item_schemmer"/>
+            </LinearLayout>
+        </com.facebook.shimmer.ShimmerFrameLayout>
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/latestRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+</FrameLayout>

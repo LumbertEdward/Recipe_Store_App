@@ -13,6 +13,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.example.recipestore.AllActivities.Constants;
 import com.example.recipestore.InterfaceClasses.SelectedProductsInterface;
 import com.example.recipestore.R;
 import com.google.android.youtube.player.YouTubeInitializationResult;
@@ -25,7 +26,6 @@ import java.util.regex.Pattern;
 
 public class VideoFragment extends Fragment {
     private YouTubePlayerSupportFragment youTubePlayerSupportFragment;
-    private static final String api_key = "AIzaSyC9g-eHDfzksJeLw5LI-Nhzhz6MNOKa0kE";
     private String mId;
     private ImageView back;
     private SelectedProductsInterface selectedProductsInterface;
@@ -73,7 +73,7 @@ public class VideoFragment extends Fragment {
         FragmentTransaction fragmentTransaction = getActivity().getSupportFragmentManager().beginTransaction();
         fragmentTransaction.replace(R.id.frameVideo, youTubePlayerSupportFragment);
         fragmentTransaction.commit();
-        youTubePlayerSupportFragment.initialize(api_key, new YouTubePlayer.OnInitializedListener() {
+        youTubePlayerSupportFragment.initialize(Constants.api_key, new YouTubePlayer.OnInitializedListener() {
             @Override
             public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer youTubePlayer, boolean b) {
                 youTubePlayer.cueVideo(convId);
